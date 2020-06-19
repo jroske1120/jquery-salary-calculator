@@ -23,6 +23,7 @@ function addEmployeeInfo() {
     console.log('newObject:', newObject);
     employees.push(newObject);//push the object into an array
     displayAdded();
+    $('#employeeInfoIn')[0].reset();
     return true;
 }//end addEmployeeInfo
 
