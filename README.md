@@ -11,8 +11,8 @@ The application should have an input form that collects employee first name, las
 [ x] create form with inputs for first, last name, ID number, job title, salary.
 [ x] submit button that stores information in array
 [ x ] append array info to DOM
-[ ] clear input fields
-[ ] loop through array of objects, if monthly costs > 20000, 
+[ x ] clear input fields
+[ x ] loop through array of objects (salary), if monthly costs > 20000, 
 [ ] if mo/costs > 20k, background color of mo/cost goes red
 [ ] Delete button removes employee from DOM
 

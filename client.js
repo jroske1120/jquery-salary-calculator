@@ -24,6 +24,8 @@ function addEmployeeInfo() {
     employees.push(newObject);//push the object into an array
     displayAdded();
     $('#employeeInfoIn')[0].reset();
+    calculateMonthlyCost(); //added calculation to click 
+    highlightInTheRed();
     return true;
 }//end addEmployeeInfo
 
@@ -43,5 +45,27 @@ function displayAdded() {
     ID Number: ${employees[i].IDNumber}
     Job Title: ${employees[i].jobTitle}
     Annual Salary: ${employees[i].annualSalary}</li>`)
+    }
+    let el1 = $('#monthlyCostOut');
+    el1.empty();
+    el1.append(calculateMonthlyCost());
+}
+
+//calculateMonthlyCost
+function calculateMonthlyCost() {
+    console.log(' in calculateMonthlyCost ');
+    let monthlyCost = 0;
+    for (i = 0; i < employees.length; i++) {
+        monthlyCost += Number(employees[i].annualSalary); //converts string to number
+        // let el = $('#monthlyCostOut');
+        // el.append(`<div>Cost: ${monthlyCostOut}</div>`);//add up all [i] at annualSalary object
+    } sum = monthlyCost/12;
+    return sum;//divides by 12
+}
+
+function highlightInTheRed(){
+    if (calculateMonthlyCost() > 20000) {
+        console.log('Too much$');
+        $('#monthlyCostOut').addClass('yellowBlockHighlight');
     }
 }
