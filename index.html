@@ -9,9 +9,22 @@
     <script src="client.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
-
+    
 <body>
-
+    <h1>jQuery Salary Calculator</h1>
+    <form id="employeeInfoIn">
+        <input type="text" id="firstNameIn" placeholder="First Name">
+        <input type="text" id="lastNameIn" placeholder="Last Name">
+        <input type="number" id="IDNumberIn" placeholder="ID Number">
+        <input type="text" id="jobTitleIn" placeholder="Job Title">
+        <input type="number" id="salaryIn" placeholder="Annual Salary">
+    </form>
+        <input type="submit" id="submitEmployeeInfo">
+    <h3>Current Inventory</h3>
+        <div id="employeeList">
+            <ol id="employeeInfoOut">
+            </ol>
+        </div>
 </body>
 
 </html>
