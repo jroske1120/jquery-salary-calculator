@@ -66,6 +66,6 @@ function calculateMonthlyCost() {
 function highlightInTheRed(){
     if (calculateMonthlyCost() > 20000) {
         console.log('Too much$');
-        $('#monthlyCostOut').addClass('yellowBlockHighlight');
+        $('#monthlyCostOut').addClass('redBlockHighlight');
     }
 }

@@ -1,6 +1,7 @@
 body {
     background-color: burlywood;
 }
-.yellowBlockHighlight {
-    background-color: yellow;
+.redBlockHighlight {
+    background-color: red;
+    display: inline;
 }
