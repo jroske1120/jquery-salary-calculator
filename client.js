@@ -8,6 +8,9 @@ function onReady() {
     console.log('in onReady');
     //capture click event
     $('#submitEmployeeInfo').on('click', addEmployeeInfo);
+    $( '#employeeInfoOut' ).on( 'click', removeEmployee );
+
+    //button for Deleting
 } // end onReady
 
 function addEmployeeInfo() {
@@ -25,7 +28,7 @@ function addEmployeeInfo() {
     displayAdded();
     $('#employeeInfoIn')[0].reset();
     calculateMonthlyCost(); //added calculation to click 
-    highlightInTheRed();
+    highlightInTheRed(); //highlights if >20k
     return true;
 }//end addEmployeeInfo
 
@@ -40,11 +43,12 @@ function displayAdded() {
     //loop through inventory
     for (i = 0; i < employees.length; i++) {
         //append each to the DOM
-        el.append(`<li> First Name: ${employees[i].firstName}
+        el.append(`<div id="specificEmployee"><li id= "specificDelete"> First Name: ${employees[i].firstName}
     Last Name: ${employees[i].lastName} 
     ID Number: ${employees[i].IDNumber}
     Job Title: ${employees[i].jobTitle}
-    Annual Salary: ${employees[i].annualSalary}</li>`)
+    Annual Salary: ${employees[i].annualSalary}</li>
+    <button class='deleteButton'>Remove</button></div>`)
     }
     let el1 = $('#monthlyCostOut');
     el1.empty();
@@ -69,3 +73,14 @@ function highlightInTheRed(){
         $('#monthlyCostOut').addClass('redBlockHighlight');
     }
 }
+
+function removeEmployee(){
+console.log('in removeEmployee');
+console.log(employees);
+$('#specificEmployee').remove();
+for ( i=0; i<employees.length; i++){
+    employees.splice[i];
+}
+//employees.splice($( this));//w/o this, removes from DOM but not from array. With, removes from DOM but empties array
+}
+//add button in employeeInfoOut to delete that removes that employee from array
