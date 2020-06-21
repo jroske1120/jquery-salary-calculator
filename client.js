@@ -9,8 +9,6 @@ function onReady() {
     //capture click event
     $('#submitEmployeeInfo').on('click', addEmployeeInfo);
     $( '#employeeInfoOut' ).on( 'click', removeEmployee );
-
-    //button for Deleting
 } // end onReady
 
 function addEmployeeInfo() {
@@ -32,17 +30,13 @@ function addEmployeeInfo() {
     return true;
 }//end addEmployeeInfo
 
-
 function displayAdded() {
     console.log(' in displayAdded');
-    //target employeeInfoOut by id
-    let el = $('#employeeInfoOut');
-    //empty
-    el.empty();
+    let el = $('#employeeInfoOut');  //target employeeInfoOut by id
+    el.empty();     //empty
     event.preventDefault();
     //loop through inventory
-    for (i = 0; i < employees.length; i++) {
-        //append each to the DOM
+    for (i = 0; i < employees.length; i++) {        //append each to the DOM
         el.append(`<div id="specificEmployee"><li id= "specificDelete"> First Name: ${employees[i].firstName}
     Last Name: ${employees[i].lastName} 
     ID Number: ${employees[i].IDNumber}
@@ -68,9 +62,9 @@ function calculateMonthlyCost() {
 }
 
 function highlightInTheRed(){
-    if (calculateMonthlyCost() > 20000) {
+    if (calculateMonthlyCost() > 20000) { //check if >20k
         console.log('Too much$');
-        $('#monthlyCostOut').addClass('redBlockHighlight');
+        $('#monthlyCostOut').addClass('redBlockHighlight'); //add in-line highlight if >20k
     }
 }
 
@@ -81,6 +75,4 @@ $('#specificEmployee').remove();
 for ( i=0; i<employees.length; i++){
     employees.splice[i];
 }
-//employees.splice($( this));//w/o this, removes from DOM but not from array. With, removes from DOM but empties array
-}
-//add button in employeeInfoOut to delete that removes that employee from array
+}//employees.splice($( this));//w/o this, removes from DOM but not from array. With, removes from DOM but empties array
