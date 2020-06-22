@@ -1,10 +1,10 @@
 (View Raw will give you the markdown that you can copy to your repos!)
 
 
-![MIT LICENSE](https://img.shields.io/github/license/joelroske/the_marketplace.svg?style=flat-square)
-![REPO SIZE](https://img.shields.io/github/repo-size/joelroske/the_marketplace.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/joelroske/the_marketplace.svg?style=flat-square)
-![FORKS](https://img.shields.io/github/forks/joelroske/the_marketplace.svg?style=social)
+![MIT LICENSE](https://img.shields.io/github/license/scottbromander/the_marketplace.svg?style=flat-square)
+![REPO SIZE](https://img.shields.io/github/repo-size/scottbromander/the_marketplace.svg?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/scottbromander/the_marketplace.svg?style=flat-square)
+![FORKS](https://img.shields.io/github/forks/scottbromander/the_marketplace.svg?style=social)
 
 # PROJECT NAME
 
@@ -53,4 +53,4 @@ _Note, include this only if you have a license file. GitHub will generate one fo
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Additional thanks to Mary Mosman, Dev Jana, and Edan Schwartz, instructors at Prime Digital Academy, for their support and guidance, as well as the rest of my cohort (Paxos) for their support and collaboration as necessary.
 
 ## Support
-If you have suggestions or issues, please email me at [Gmail](joel.j.roske@gmail.com)
+If you have suggestions or issues, please email me at [joel.j.roske@gmail.com](joel.j.roske@gmail.com)
